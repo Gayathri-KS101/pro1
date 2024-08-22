@@ -40,26 +40,7 @@ body {
     padding-right: 20px; /* Add padding to the right */
 }
 
-/*
-.navbar {
-    height: 73px;
-    /* Adjust the height of the navbar 
-    width: 100%;
-    /* Take full width of the container 
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    position: absolute;
-    /* Make the navbar overlay the main image 
-    border-top: 5px solid rgba(1, 30, 30, 0.7);
-    /* Neon effect border 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20px;
-    /* Add padding to the left 
-}*/
+
 
 .navbar a {
     color: white;
@@ -83,6 +64,7 @@ body {
     /* Set a background color matching the video */
     position: relative;
     /* Ensure the main image section is positioned correctly */
+    box-shadow: 0 4px 45px rgba(0, 255, 255, 0.8);
 }
 
 #mainimg video {
@@ -114,7 +96,7 @@ body {
         /* Reduce font size for dropdown items */
     }
 
-    #mainimg video {
+    #mainimg{
         content: url("finmainvidph(1).mp4");
         width: 100%;
         height: auto;
@@ -125,72 +107,34 @@ body {
 }
 
 @media (max-width: 600px) {
-    #mainimg video {
+    #mainimg{
         width: 100%;
         height: auto;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    #mainimg {
-        margin: 50px auto;
-        max-width: 80%;
-    }
-
-    #about {
-        font-size: 28px;
-    }
-
-    #about img {
-        margin: 30px auto;
-        max-width: 80%;
-    }
 
 
 
-}
-
-@media (max-width: 360px) {
-
-    .navbar a {
-        font-size: 10px;
-        /* Adjust font size for smaller screens */
-        padding: 8px 12px;
-        /* Adjust padding for smaller buttons */
-    }
-
-    .dropdown-content {
-        min-width: auto;
-        /* Allow content to adjust width */
-        border: #000;
-    }
-
-    .dropdown-content a {
-        font-size: 18px;
-        /* Reduce font size for dropdown items */
-    }
-
-    #mainimg video {
-        content: url("finmainvidph(1).mp4");
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        /* Center the video horizontally */
-        display: block;
-    }
-}
 
 @media (max-width: 600px) {
-    #mainimg video {
-        width: 100%;
-        height: auto;
+    #mainimg {
+        margin: 40px auto;
+        max-width: 100%;
     }
 }
 
 @media screen and (max-width: 1200px) {
+    .navbar {
+        max-width: 100%; /* Full width on very small screens */
+        left: 0; /* Full width */
+        max-height: fit-content;
+    }
+    
+    
     #mainimg {
-        margin: 50px auto;
-        max-width: 80%;
+        margin: 40px auto;
+        max-width: 100%;
     }
 
     #about {
@@ -205,15 +149,61 @@ body {
 
 @media (max-width: 1092px) {
     .navbar {
+        max-width: 100%; /* Full width on very small screens */
+        left: 0; /* Full width */
+        max-height: fit-content;
+    }
+    #mainimg {
+        margin: 40px auto;
+        max-width: 100%;
+        margin-top: 0%;
+    }
+
+    #about {
+        font-size: 26px;
+    }
+
+    #about img {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+    .navbar {
         width: 100%;
         height: auto;
     }
 }
 
 @media screen and (max-width: 992px) {
+    .navbar {
+        max-width: 100%; /* Full width on very small screens */
+        left: 0; /* Full width */
+        max-height: fit-content;
+    }
     #mainimg {
         margin: 40px auto;
+        max-width: 100%;
+        margin-top: 0%;
+    }
+
+    #about {
+        font-size: 26px;
+    }
+
+    #about img {
+        margin: 20px auto;
         max-width: 90%;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 1089px) {
+    .navbar {
+        max-width: 100%; /* Full width */
+        left: 0; /* Aligns to the left edge */
+        max-height: fit-content;
+    }
+    #mainimg {
+        margin: 40px auto;
+        max-width: 100%;
+        margin-top: 0;
     }
 
     #about {
@@ -226,19 +216,26 @@ body {
     }
 }
 
+
 @media screen and (max-width: 768px) {
+    .navbar {
+        max-width: 100%; /* Full width */
+        left: 0; /* Aligns to the left edge */
+        max-height: fit-content;
+    }
     #mainimg {
-        margin: 30px auto;
+        margin: 40px auto;
         max-width: 100%;
+        margin-top: 0;
     }
 
     #about {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     #about img {
-        margin: 10px auto;
-        max-width: 100%;
+        margin: 20px auto;
+        max-width: 90%;
     }
 }
 
