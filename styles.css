@@ -15,27 +15,51 @@ body {
 
 
 
-
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
 
 .navbar {
-    height: 73px;
-    /* Adjust the height of the navbar */
     width: 100%;
-    /* Take full width of the container */
+    max-width: 100%; /* Ensure navbar doesn't exceed video width */
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed; /* Fixed to stay in place when scrolling */
+    background-color: none; /* Transparent background */
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    align-items: center;
+    padding-right: 20px; /* Add padding to the right */
+}
+
+/*
+.navbar {
+    height: 73px;
+    /* Adjust the height of the navbar 
+    width: 100%;
+    /* Take full width of the container 
     overflow: hidden;
     top: 0;
     left: 0;
     z-index: 1000;
     position: absolute;
-    /* Make the navbar overlay the main image */
+    /* Make the navbar overlay the main image 
     border-top: 5px solid rgba(1, 30, 30, 0.7);
-    /* Neon effect border */
+    /* Neon effect border 
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
-    padding-left: calc(70vw - 50px);
-    /* Add padding to the left */
-}
+    padding-right: 20px;
+    /* Add padding to the left 
+}*/
 
 .navbar a {
     color: white;
