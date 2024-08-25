@@ -64,7 +64,7 @@ body {
     /* Set a background color matching the video */
     position: relative;
     /* Ensure the main image section is positioned correctly */
-    box-shadow: 0 4px 45px rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 45px rgba(0, 255, 255, 0.8);
 }
 
 #mainimg video {
@@ -76,35 +76,19 @@ body {
 
 
 @media (max-width: 480px) {
-
-
-    .navbar a {
-        font-size: 10px;
-        /* Adjust font size for smaller screens */
-        padding: 5px 6px;
-        /* Adjust padding for smaller buttons */
-    }
-
-    .dropdown-content {
-        min-width: auto;
-        /* Allow content to adjust width */
-        border: #000;
-    }
-
-    .dropdown-content a {
-        font-size: 18px;
-        /* Reduce font size for dropdown items */
-    }
-
-    #mainimg{
-        content: url("finmainvidph(1).mp4");
+    #mainimg video {
+        display: block;
         width: 100%;
         height: auto;
-        margin: 0 auto;
-        /* Center the video horizontally */
-        display: block;
     }
 }
+
+#mainimg video {
+    width: 100%;
+    height: auto;
+    background-color: #000; /* Fallback color */
+}
+
 
 @media (max-width: 600px) {
     #mainimg{
@@ -156,7 +140,7 @@ body {
     #mainimg {
         margin: 40px auto;
         max-width: 100%;
-        margin-top: 0%;
+        margin-top: 0;
     }
 
     #about {
@@ -182,18 +166,12 @@ body {
     #mainimg {
         margin: 40px auto;
         max-width: 100%;
-        margin-top: 0%;
+        margin-top: 0;
     }
 
-    #about {
-        font-size: 26px;
-    }
-
-    #about img {
-        margin: 20px auto;
-        max-width: 90%;
-    }
 }
+
+
 @media screen and (max-width: 1200px) and (min-width: 1089px) {
     .navbar {
         max-width: 100%; /* Full width */
